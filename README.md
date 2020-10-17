@@ -5,7 +5,7 @@
 &emsp; 📐 **Scope:**   <br> 
 &emsp;&emsp;&emsp;Build a mobile count-down timer interchanging between work and rest period. <br>
 &emsp; 🧰 **Tool Stack:**   <br>
-&emsp;&emsp;&emsp;Android Studio | | XML (frontend) | Java (backend) 
+&emsp;&emsp;&emsp;Android Studio | Gradle | XML (frontend) | Java (backend) 
 <br>
 
 ### 🔨 Feature Overview

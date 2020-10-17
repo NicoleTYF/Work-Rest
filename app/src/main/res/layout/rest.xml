@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/alert_light_frame"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/stateImg"
+        android:layout_width="237dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="29dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rest"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="-35dp"
+        android:layout_marginLeft="250dp"
+        android:background="@mipmap/ic_action_cancel" />
+
+    <Button
+        android:id="@+id/switchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="0.03"
+        android:text="Just Relax and Take a Rest"
+        tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
+</LinearLayout>

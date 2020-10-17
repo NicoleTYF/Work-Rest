@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/pop"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:drawable/alert_light_frame"
+android:gravity="bottom"
+android:orientation="vertical"
+android:weightSum="1">
+
+<ImageView
+    android:id="@+id/stateImg"
+    android:layout_width="228dp"
+    android:layout_height="165dp"
+    android:layout_above="@+id/switchBtn"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:layout_marginBottom="29dp"
+    android:layout_marginTop="60dp"
+    android:background="@drawable/work"
+    android:paddingTop="60dp"
+    tools:ignore="ContentDescription" />
+
+<Button
+    android:id="@+id/cancelBtn"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_marginBottom="-40dp"
+    android:layout_marginLeft="253dp"
+    android:background="@mipmap/ic_action_cancel" />
+
+
+<Button
+    android:id="@+id/switchBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="left"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="50dp"
+    android:layout_weight="0.03"
+    android:text="It's Time to go back to Work"
+    tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
+</LinearLayout>

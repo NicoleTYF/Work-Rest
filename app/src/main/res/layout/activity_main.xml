@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress ALL -->
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_timer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.nicolefsy.timer.Timer"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/display_time"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Label_mins_left"
+        android:layout_alignBottom="@+id/Label_mins_left"
+        android:layout_alignLeft="@+id/Startcount"
+        android:layout_alignStart="@+id/Startcount"
+        android:layout_centerHorizontal="true"
+        android:hint="00"
+        android:text="00"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/yeledored"
+        android:textSize="40sp"
+        android:textStyle="normal|bold"
+        tools:ignore="HardcodedText" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/action_bar"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingBottom="50dp"
+        android:paddingLeft="-50dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/Startcount"
+        android:layout_width="160dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/linearprogressBar"
+        android:layout_centerHorizontal="true"
+        android:onClick="startCounter"
+        android:text="@string/start_cycle"
+        tools:ignore="HardcodedText,InefficientWeight,ObsoleteLayoutParam,RtlHardcoded,Suspicious0dp" />
+
+    <EditText
+        android:id="@+id/workEditText"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:allowUndo="false"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:text="1"
+        tools:ignore="HardcodedText,UnusedAttribute"
+        android:layout_alignBaseline="@+id/Label_work_time"
+        android:layout_alignBottom="@+id/Label_work_time"
+        android:layout_toRightOf="@+id/Label_work_time"
+        android:layout_toEndOf="@+id/Label_work_time" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Startcount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/stop"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Label_mins_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workEditText"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/display_time"
+        android:layout_toRightOf="@+id/display_time"
+        android:text="@string/time_left"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <ProgressBar
+        android:id="@+id/linearprogressBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:progressTint="@color/yeledored"
+        android:secondaryProgressTint="#3a3a48"
+        tools:ignore="NewApi,UnusedAttribute"
+        android:layout_marginTop="16dp"
+        android:layout_alignTop="@+id/display_state"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/display_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_null"
+        android:textSize="24sp"
+        android:layout_below="@+id/display_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/Label_work_time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="@string/work_time"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:id="@+id/Label_rest_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rest_time"
+        android:layout_alignTop="@+id/Label_mins_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/soundBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="410dp"
+        android:contentDescription=""
+        android:src="@drawable/ic_action_sound_on"
+        android:tint="@color/yeledored"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/soundBtn"
+        android:layout_marginLeft="120dp"
+        android:contentDescription=""
+        android:src="@drawable/ic_action_vibrate"
+        android:tint="@color/yeledored"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+
+    <EditText
+        android:id="@+id/restEditText"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Label_rest_time"
+        android:layout_alignBottom="@+id/Label_rest_time"
+        android:layout_alignLeft="@+id/workEditText"
+        android:layout_alignStart="@+id/workEditText"
+        android:allowUndo="false"
+        android:ems="10"
+        android:inputType="time"
+        android:selectAllOnFocus="true"
+        android:text="1"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+</RelativeLayout>

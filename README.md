@@ -12,7 +12,7 @@
 <table>
 <tr>
   <td> 
-    <b>Count down timer<br>(<a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/res/layout/activity_main.xml">xml</a>, <a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/java/com/example/nicolefsy/project_timer/Timer.java">Timer.java </a>, <a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/java/com/example/nicolefsy/project_timer/BackgroundService.java">BackgroundService.java</a>)</b>  
+    <b>Count down timer<br>(<a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/res/layout/activity_main.xml">activity_main.xml</a>, <a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/java/com/example/nicolefsy/project_timer/Timer.java">Timer.java </a>, <a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/java/com/example/nicolefsy/project_timer/BackgroundService.java">BackgroundService.java</a>)</b>  
   </td>
   <td width="230"><li>Count down work and rest time when user clicks Start button </li><li>Count down in the background </li></td>
   <td><img src="https://github.com/NicoleTYF/Work-Rest/blob/main/WR_timer.webp" height="200"/></td>
@@ -28,7 +28,7 @@
   
 <tr>
   <td> 
-    <b>Enable vibrate and sound when time's up<br>(<a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/res/layout/activity_main.xml">html</a>, <a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/java/com/example/nicolefsy/project_timer/Timer.java">Timer.java </a>)</b>  
+    <b>Enable vibrate and sound when time's up<br>(<a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/res/layout/activity_main.xml">activity_main..xml</a>, <a href="https://github.com/NicoleTYF/Work-Rest/blob/main/app/src/main/java/com/example/nicolefsy/project_timer/Timer.java">Timer.java </a>)</b>  
   </td>
   <td width="230"></td>
   <td><img src="https://github.com/NicoleTYF/Work-Rest/blob/main/WR_vib.PNG" height="100"/></td>
